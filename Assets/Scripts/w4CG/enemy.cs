@@ -26,7 +26,7 @@ public class enemy : MonoBehaviour
             health -= 1;
             if (health == 0)
             {
-                enemyCreature.SetActive(false);
+                Object.Destroy(enemyCreature);
             }
             healthIndicator.text = health.ToString();
         }

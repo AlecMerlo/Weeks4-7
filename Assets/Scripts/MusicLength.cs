@@ -20,7 +20,7 @@ public class MusicLength : MonoBehaviour
     void barSetup()
     {
         // when clicked, set the timer to the song length and reset its value
-        slider.maxValue = audioSource.clip.length;
+        slider.maxValue = audioSource.clip.length - 0.01f;
         slider.value = 0;
     }
 }

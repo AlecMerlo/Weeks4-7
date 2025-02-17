@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class SliderValue : MonoBehaviour
 {
     public Slider slider;
+    public AudioSource music;
+
 
     // Start is called before the first frame update
     void Start()
@@ -16,7 +18,7 @@ public class SliderValue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // move the slider across time
-        slider.value += Time.deltaTime;
+        // setting the display of the time elapsed in the song to the time elaped in the song
+        slider.value = music.time;
     }
 }

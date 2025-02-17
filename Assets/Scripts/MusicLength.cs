@@ -5,14 +5,14 @@ using UnityEngine.UI;
 
 public class MusicLength : MonoBehaviour
 {
-    public Button button;
-
     public AudioSource audioSource;
 
     public Slider slider;
 
     void Start()
     {
+        Button button = GetComponent<Button>();
+
         button.onClick.AddListener(barSetup);
     }
 

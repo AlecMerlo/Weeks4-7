@@ -617,7 +617,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beecc9aab1bf2d34e80a7c9a3deadfea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 229771798}
   audioSource: {fileID: 1625229097}
   slider: {fileID: 846826562}
 --- !u!1 &236371388
@@ -1123,7 +1122,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beecc9aab1bf2d34e80a7c9a3deadfea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 458552667}
   audioSource: {fileID: 1625229097}
   slider: {fileID: 846826562}
 --- !u!1 &479971465
@@ -1323,7 +1321,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.5
+  m_Value: 0.25
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -2670,7 +2668,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beecc9aab1bf2d34e80a7c9a3deadfea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 1611418100}
   audioSource: {fileID: 1625229097}
   slider: {fileID: 846826562}
 --- !u!1 &1614937259
@@ -3074,7 +3071,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beecc9aab1bf2d34e80a7c9a3deadfea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 1810003700}
   audioSource: {fileID: 1625229097}
   slider: {fileID: 846826562}
 --- !u!1 &1901623278
@@ -3405,7 +3401,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beecc9aab1bf2d34e80a7c9a3deadfea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 2026452003}
   audioSource: {fileID: 1625229097}
   slider: {fileID: 846826562}
 --- !u!1660057539 &9223372036854775807

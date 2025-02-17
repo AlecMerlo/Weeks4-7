@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class Stars : MonoBehaviour
 {
-    float t = 0;
     public GameObject star;
     public GameObject spawn;
     public RectTransform canvas;
@@ -14,19 +13,20 @@ public class Stars : MonoBehaviour
     void Start()
     {
         star.transform.parent = spawn.transform;
+        star.transform.localScale = Vector3.one * 6;
     }
 
     // Update is called once per frame
     void Update()
     {
-        t += Time.deltaTime;
+        // moves as time goes along
+        transform.position += Vector3.right * Time.deltaTime * 27;
+        transform.position += Vector3.up * Time.deltaTime * 12;
 
-        transform.position += Vector3.right * Time.deltaTime * 9 * 3;
-        transform.position += Vector3.up * Time.deltaTime * 4 * 3;
-
+        // when it passes the canvas
         if (transform.position.x > canvas.sizeDelta.x) 
         {
-            t = 0;
+            // create a new one and destroy the old
             Instantiate(star, new Vector3(-225,40,0),Quaternion.identity);
             Destroy(star);
         }

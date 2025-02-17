@@ -11,6 +11,7 @@ public class MusicLength : MonoBehaviour
 
     void Start()
     {
+        // get button
         Button button = GetComponent<Button>();
 
         button.onClick.AddListener(barSetup);

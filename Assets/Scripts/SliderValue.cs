@@ -14,7 +14,8 @@ public class SliderValue : MonoBehaviour
     {
         // setting the display of the time elapsed in the song to the time elaped in the song
         slider.value = music.time;
-
+        
+        // will play the bord sound when the song ends
         if(music.time >= music.clip.length - 0.02f && music.clip != bird && music.loop == false)
         {
             music.clip = bird;
